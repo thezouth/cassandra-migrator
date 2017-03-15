@@ -15,5 +15,6 @@ setup(name='cassandra_migrator',
       packages=['migrator'],
       zip_safe=False,
       install_requires=requirements,
-      scripts=['scripts/cmig']
+      scripts=['scripts/cmig'],
+      data_files=[('.', ['requirements.txt'])]
       )
