@@ -1,0 +1,16 @@
+#!python
+import easyargs
+
+import migrator
+
+@easyargs
+def main(src_url, dst_url, cond):
+    src = migrator.Cassandra(*migrator.parse(src_url))
+    dst = migrator.Cassandra(*migrator.parse(dst_url))
+
+    dst.make_keyspace()
+    migrator.copy_table_structure(src, dst)
+    migrator.copy_table_data(src, dst, cond)
+
+if __name__ == '__main__':
+    main()

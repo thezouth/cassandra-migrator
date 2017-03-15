@@ -1,0 +1,2 @@
+cassandra-driver==3.8.0
+easyargs==0.9.3
