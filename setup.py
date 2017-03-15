@@ -6,7 +6,7 @@ with open('requirements.txt', 'r') as f:
 requirements = [package for package in lines if package and not package.startswith('#')]
 
 setup(name='cassandra_migrator',
-      version='0.1',
+      version='0.1.001',
       description='cassanra migration tools',
       url='https://github.com/webscal3r/cassandra-migrator.git',
       author='Pitsanu Swangpheaw',
