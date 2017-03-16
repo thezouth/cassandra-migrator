@@ -14,7 +14,7 @@ elif os.path.exists(local_requirements):
 
 requirements = [package for package in lines if package and not package.startswith('#')]
 
-setup(name='cassandra_migrator',
+setup(name='cassandra-migrator',
       version='0.1.4',
       description='cassanra migration tools',
       url='https://github.com/webscal3r/cassandra-migrator.git',
